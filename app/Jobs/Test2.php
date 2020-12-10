@@ -29,6 +29,6 @@ class Test2
      */
     public function handle()
     {
-        //
+        info('handling job 2');
     }
 }

@@ -8,7 +8,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Sassnowski\Venture\WorkflowStep;
 
-class Test1
+class Test4
 {
     use WorkflowStep, Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
@@ -29,6 +29,6 @@ class Test1
      */
     public function handle()
     {
-        info('handling job 1');
+        info('handling job 3');
     }
 }
