@@ -3,12 +3,14 @@
 namespace App\Jobs;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Sassnowski\Venture\WorkflowStep;
 
-class Test2
+class TestQueued3 implements ShouldQueue
 {
     use WorkflowStep, Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
@@ -19,7 +21,7 @@ class Test2
      */
     public function __construct()
     {
-
+        //
     }
 
     /**
